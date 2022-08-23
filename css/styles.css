@@ -1,11 +1,12 @@
+/* Navigation Bar */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 500;
+  padding: var(--size-10) var(--size-30);
   transition: ease-in-out 0.3s;
-  background-color: #111
 }
 
 .navbar.sticky {
@@ -29,7 +30,6 @@
 
 .navbar-toggler span {
   background-color: transparent;
-  color: #666;
   font-size: 20px;
   cursor: pointer;
   pointer-events: none;
@@ -42,15 +42,12 @@
 .navbar .container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .navbar-brand {
-  margin-right: auto;
-  font-size: 30px;
-  font-weight: 700;
-  width: 100%;
+  width: var(--size-150);
   transition: ease-in-out 0.3s;
-  color: #666;
 }
 
 .navbar-nav {
@@ -59,11 +56,133 @@
 }
 
 .nav-link a {
-  color: #666;
-  font-size: 0.8125rem;
-  font-weight: 600;
-  font-family: "Hind", sans-serif;
-  text-transform: uppercase;
-  margin-right: 40px;
+  margin-right: var(--size-20);
   line-height: 20px;
+  transition: ease-in-out 0.3s;
+}
+
+.navbar-nav .btn {
+  margin-left: var(--size-10);
+}
+
+.nav-link a:hover {
+  color: var(--blue);
+}
+
+/* Hero Left*/
+.bg-hero {
+  background-image: url(../assets/banners/header-background.svg);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-hero .container {
+  padding-top: var(--size-150);
+  padding-bottom: var(--size-150);
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-left {
+  padding: 0 var(--size-30);
+  max-width: 50%;
+}
+
+.hero-left h2 {
+  font-size: var(--size-50);
+  margin-bottom: var(--size-10);
+}
+
+.hero-left p {
+  font-size: var(--size-16);
+}
+
+.hero-buttons {
+  margin-top: var(--size-30);
+  font-size: var(--size-16);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hero-buttons .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: var(--size-30);
+  font-size: var(--size-16);
+}
+
+.hero-buttons i {
+  font-size: var(--size-20);
+  margin-right: var(--size-10);
+}
+
+.hero-buttons a {
+  color: var(--blue);
+  font-weight: 700;
+}
+
+/* Hero Right */
+.hero-right {
+  padding: 0 var(--size-30);
+  max-width: 50%;
+  display: flex;
+  position: relative;
+}
+
+.hero-right .icon {
+  position: absolute;
+  background-color: var(--white);
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px rgba(48, 63, 100, 0.3);
+}
+
+.hero-right .icon-sm{
+  width: var(--size-60);
+  height: var(--size-60);
+  padding: var(--size-10);
+}
+
+.hero-right .icon-lg {
+  width: var(--size-80);
+  height: var(--size-80);
+  padding: var(--size-16);
+}
+
+.icon-1 {
+  top: 1rem;
+  right: 21rem;
+}
+
+.icon-2 {
+  top: 1rem;
+  right: 13rem;
+}
+
+.icon-3 {
+  top: 1rem;
+  right: 3rem;
+}
+
+.icon-4 {
+  top: 11rem;
+  right: 21.2rem;
+}
+
+.icon-5 {
+  top: 11rem;
+  right: 8rem;
+}
+
+.icon-6 {
+  top: 18rem;
+  right: 13rem;
+}
+
+.icon-7 {
+  top: 21rem;
+  right: 3rem;
 }
