@@ -1,0 +1,115 @@
+/* Style Variables */
+:root {
+  --white: #fff;
+  --black: #000;
+  --blue: #2476FF;
+  --font-color-base: #677788;
+  --font-color-alt: #5F6368;
+  --font-color-light: #9EA7B4;
+  --font-color-placeholder: #ECF2FF;
+  --bg-contrast: #F8FAFE;
+  --bg-form: #20335B;
+
+  --size-8: 0.5rem;
+  --size-10: 0.625rem;
+  --size-12: 0.75rem;
+  --size-14: 0.875rem;
+  --size-16: 1rem;
+  --size-18: 1.125rem;
+  --size-20: 1.25rem;
+  --size-30: 1.875rem;
+  --size-40: 2.5rem;
+  --size-50: 3.125rem;
+  --size-100: 6.25rem;
+  --size-150: 9.375rem;
+}
+
+/* Default Styles */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: var(--size-14);
+  line-height: 1.6;
+  letter-spacing: 0;
+  color: var(--font-color-base);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: var(--size-30);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+  border-style: none;
+}
+
+input {
+  background-color: transparent;
+  border: 1px solid var(--font-color-light);
+  border-radius: var(--size-8);
+  padding: var(--size-10) var(--size-12);
+  font-size: var(--size-16);
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: var(--font-color-dark);
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  transition: ease-in-out 0.3s;
+}
+
+
+
+/* Min Width Media Queries */
+/* @media (min-width: 768px) {
+
+}
+   
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+} */
