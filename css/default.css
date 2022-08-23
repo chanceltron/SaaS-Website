@@ -101,7 +101,7 @@ input {
 
 
 /* Min Width Media Queries */
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
 
 }
    
@@ -111,5 +111,7 @@ input {
 }
 
 @media (min-width: 1200px) {
-
-} */
+  .container {
+    max-width: 1140px;
+  }
+}
