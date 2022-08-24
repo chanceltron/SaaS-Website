@@ -456,3 +456,25 @@
   margin-top: var(--size-40);
 }
 
+/* Trusted Brands Styling */
+.trusted-brands {
+  padding: 0 var(--size-30);
+  padding-bottom: var(--size-100);
+  text-align: center;
+}
+
+.trusted-brands h3 {
+  color: var(--font-color-dark);
+  text-transform: uppercase;
+  font-size: var(--size-18);
+  margin-bottom: var(--size-30);
+}
+
+.brand-grid-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand-logo {
+  width: var(--size-100);
+}
