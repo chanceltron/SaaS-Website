@@ -361,3 +361,34 @@
   color: var(--black);
   font-weight: 500;
 }
+
+/* Video Player Styling */
+
+.video-player {
+  position: relative;
+  padding: var(--size-100) var(--size-30);
+}
+
+.play-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.play-btn{
+  width: var(--size-80);
+  height: var(--size-80);
+  border-radius: 50%;
+  background-color: var(--white);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.play-btn i {
+  font-size: var(--size-30);
+  color: var(--black);
+}
