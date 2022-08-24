@@ -24,6 +24,7 @@
     ></script>
   </head>
   <body>
+    <!-- Navbar -->
     <nav id="topNav" class="navbar nav">
       <div class="container">
         <button
@@ -46,7 +47,9 @@
         </ul>
       </div>
     </nav>
-    <header class="bg-hero">
+
+    <!-- Hero Section -->
+    <section class="bg-hero">
       <div class="container">
         <div class="hero-left">
           <h2>Empowering <br />teams with the <br />freedom</h2>
@@ -55,7 +58,7 @@
             <button class="btn btn-primary">
               <i class="fa-solid fa-circle-play"></i>Play Video
             </button>
-            <a href="#">Learn More</a>
+            <a class="btn btn-secondary" href="#">Learn More</a>
           </div>
         </div>
         <div class="hero-right">
@@ -82,15 +85,16 @@
           </div>
         </div>
       </div>
-    </header>
+    </section>
 
     <!-- Key Benefits -->
-    <section>
-      <div class="container key-benefits">
-        <div class="key-benefits">
+    <section class="key-benefits">
+      <div class="container">
+        <div class="benefits-text">
           <h2>Key Benefits</h2>
           <p>Design faster with a growing arrow of beautiful templates</p>
         </div>
+        <!-- Cards -->
         <div class="benefits-grid-wrapper">
           <div class="benefits-card">
             <div class="benefits-img">
@@ -152,6 +156,21 @@
     </section>
 
     <!-- Video Demo -->
+    <section class="video-demo">
+      <div class="container bg-contrast">
+        <div class="video-wrapper">
+          <div class="video-left">
+            <h2>Front makes you look at things from a different perspective</h2>
+            <button class="btn btn-primary">
+              <i class="fa-solid fa-circle-play"></i>Play Video
+            </button>
+          </div>
+          <div class="video-right">
+            <img src="./assets/banners/banner_one.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script>
       const nav = document.getElementById("topNav");
