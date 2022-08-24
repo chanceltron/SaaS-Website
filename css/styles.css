@@ -392,3 +392,67 @@
   font-size: var(--size-30);
   color: var(--black);
 }
+
+/* Spotlight Styling */
+.spotlight {
+  padding: 0 var(--size-30);
+  padding-bottom: var(--size-100);
+}
+
+.spotlight-wrapper {
+  display: flex;
+
+}
+
+.spotlight-left {
+  flex: none;
+  align-items: center;
+  width: 22.5rem;
+  height: 24.7rem;
+}
+
+.picture-wrapper {
+  position: relative;
+}
+
+.dots {
+  position: absolute;
+  width: 10rem;
+  top: var(--size-100);
+}
+
+.profile {
+  position: absolute;
+  top: 0;
+  left: var(--size-40);
+  width: 20rem;
+  z-index: 2;
+}
+
+.ghost{
+  visibility: hidden;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: relative;
+}
+
+.spotlight-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--size-40);
+  height: 24.7rem;
+  align-self: stretch;
+}
+
+.hubspot-logo {
+  width: var(--size-100);
+}
+
+.spotlight-right h3 {
+  color: var(--black);
+  margin-top: var(--size-40);
+}
+
