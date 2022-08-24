@@ -584,7 +584,7 @@
 }
 
 .form-section-left {
-  flex: 2;
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -679,9 +679,22 @@
 }
 
 .form-inputs {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   gap: var(--size-20);
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--size-20);
+}
+
+.form-inputs input,
+.form-inputs select {
+  width: 100%;
 }
 
 .comment-input {
