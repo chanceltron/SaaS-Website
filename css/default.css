@@ -76,12 +76,31 @@ img {
   border-style: none;
 }
 
-input {
+input,
+textarea,
+select {
   background-color: transparent;
   border: 1px solid var(--font-color-light);
   border-radius: var(--size-8);
   padding: var(--size-10) var(--size-12);
   font-size: var(--size-16);
+  font-family: 'Inter', sans-serif;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--blue);
+}
+
+input[type='checkbox'] {
+  width: var(--size-30);
+  height: var(--size-30);
+  border: 1px solid var(--font-color-light);
+  border-radius: var(--size-8);
+  background-color: var(--bg-form);
+  cursor: pointer;
 }
 
 .container {

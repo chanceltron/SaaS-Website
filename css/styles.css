@@ -1,3 +1,26 @@
+/* Animations */
+
+/* Icon Animation */
+@keyframes icon-animation {
+  0% {
+    transform: translateY(var(--size-100));
+    opacity: 0%;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Card Animation */
+@keyframes card-animation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
 /* Navigation Bar */
 .navbar {
   position: fixed;
@@ -69,7 +92,7 @@
   color: var(--blue);
 }
 
-/* Hero Left*/
+/* Hero Section Styling*/
 .bg-hero {
   background-image: url(../assets/banners/header-background.svg);
   height: 100%;
@@ -149,17 +172,6 @@
   padding: var(--size-16);
 }
 
-/* Icon Animation */
-@keyframes icon-animation {
-  0% {
-    transform: translateY(var(--size-100));
-    opacity: 0%;
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
 /* Icon Positioning */
 .icon-1 {
   top: 1rem;
@@ -225,6 +237,10 @@
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   border-radius: var(--size-8);
   padding: var(--size-16);
+}
+
+.benefits-card:hover {
+  animation: card-animation 0.5s both;
 }
 
 .benefits-img {
@@ -401,7 +417,7 @@
 
 .spotlight-wrapper {
   display: flex;
-
+  justify-content: center;
 }
 
 .spotlight-left {
@@ -429,14 +445,6 @@
   z-index: 2;
 }
 
-.ghost{
-  visibility: hidden;
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: relative;
-}
-
 .spotlight-right {
   display: flex;
   flex-direction: column;
@@ -444,7 +452,6 @@
   justify-content: center;
   padding: 0 var(--size-40);
   height: 24.7rem;
-  align-self: stretch;
 }
 
 .hubspot-logo {
@@ -554,10 +561,6 @@
   margin-top: var(--size-8);
 }
 
-.info-card {
-  /* max-width: 20rem; */
-}
-
 .info-graphic {
   width: var(--size-50);
 }
@@ -565,4 +568,157 @@
 .price-info-header {
   margin: var(--size-16) 0;
   color: var(--black);
+}
+
+/* Form Styling */
+.bg-form {
+  margin-top: var(--size-60);
+  background-color: var(--bg-form);
+  padding: var(--size-30);
+}
+
+.form-section-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-section-left {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--size-30);
+}
+
+.form-section-left h2 {
+  color: var(--white);
+  margin-bottom: var(--size-10);
+}
+
+.form-section-left p {
+  font-size: var(--size-18);
+}
+
+.form-section-left hr {
+  border: none;
+  width: 13rem;
+  height: 1px;
+  background-color: var(--white);
+  border-radius: var(--size-8);
+  margin: var(--size-20) 0;
+}
+
+.form-section-left h5 {
+  color: var(--white);
+  font-size: var(--size-16);
+  font-weight: 400;
+  margin-bottom: var(--size-10);
+  font-style: italic;
+}
+
+.hire-us-2 {
+  margin-top: var(--size-30);
+}
+
+.form-section-left h3 {
+  color: var(--white);
+  font-size: var(--size-20);
+  font-weight: 400;
+  
+}
+
+.user-container {
+  margin-top: var(--size-50);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--size-40);
+}
+
+.user-img {
+  width: var(--size-50);
+  height: var(--size-50);
+  transition: ease-in-out .3s;
+}
+
+.user-img img {
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.user-img:hover {
+  width: var(--size-60);
+}
+
+.form-section-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: var(--size-30);
+}
+
+.form-card {
+  max-width: 41.875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: var(--size-8);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  background-color: var(--white);
+  padding: var(--size-30);
+}
+
+.form-card h3 {
+  color: var(--black);
+  margin-bottom: var(--size-20);
+}
+
+.form-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--size-20);
+}
+
+.comment-input {
+  margin-top: var(--size-20);
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.checkbox-section {
+  margin-top: var(--size-14);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--size-10);
+}
+
+.privacy-links {
+  margin-top: var(--size-16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--size-30);
+}
+
+.privacy-links a {
+  color: var(--font-color-dark);
+  font-size: var(--size-14);
+  font-weight: 700;
+  text-decoration: dotted underline;
+  transition: ease-in-out .3s;
+}
+
+.privacy-links a:hover {
+  color: var(--blue);
+}
+
+.submit-btn {
+  margin-top: var(--size-50);
+  display: flex;
+  justify-content: center;
 }
