@@ -105,6 +105,8 @@ input[type='checkbox'] {
 
 .container {
   width: 100%;
+  padding-left: var(--size-30);
+  padding-right: var(--size-30);
   margin-left: auto;
   margin-right: auto;
 }
@@ -137,7 +139,11 @@ input[type='checkbox'] {
   color: var(--white);
 }
 
-
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 
 
