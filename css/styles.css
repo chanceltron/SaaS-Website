@@ -737,9 +737,8 @@ footer {
 }
 
 .footer-top {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: var(--size-20);
 }
 
@@ -751,6 +750,7 @@ footer {
 
 .footer-brand img {
   width: var(--size-100);
+  margin-bottom: var(--size-20);
 }
 
 .footer-col h3 {
