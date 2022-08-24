@@ -396,7 +396,7 @@
 /* Spotlight Styling */
 .spotlight {
   padding: 0 var(--size-30);
-  padding-bottom: var(--size-100);
+  padding-bottom: var(--size-60);
 }
 
 .spotlight-wrapper {
