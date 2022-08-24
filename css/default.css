@@ -83,7 +83,7 @@ select {
   border: 1px solid var(--font-color-light);
   border-radius: var(--size-8);
   padding: var(--size-10) var(--size-12);
-  font-size: var(--size-16);
+  font-size: var(--size-14);
   font-family: 'Inter', sans-serif;
 }
 
@@ -138,13 +138,6 @@ input[type='checkbox'] {
   background-color: var(--font-color-light);
   color: var(--white);
 }
-
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 
 
 
