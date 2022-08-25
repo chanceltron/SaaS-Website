@@ -111,8 +111,8 @@
 }
 
 .bg-hero .container {
-  padding-top: var(--size-150);
-  padding-bottom: var(--size-150);
+  padding-top: 14rem;
+  padding-bottom: 20rem;
   display: flex;
   justify-content: space-between;
 }
