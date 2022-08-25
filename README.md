@@ -17,3 +17,13 @@ Questions that came up during the site build:
 
 - Form Section
   1. I had issues with the sizing of the form in this section. It seemed to want to take up too much space.
+
+
+- Responsive Design
+  1. Is there a better way to handle the icons so that they shrink to fit the space? I ran into an issue of the icons going off screen between the tablet snap point and the mobile snap point.
+
+  2. I think the answer to #1 will also answer resizing the Hubspot pictures to fit the viewport properly.
+
+
+
+Thank you very much for your feedback! I have had an awesome time learning this stuff. I had a pretty good general knowledge of HTML and CSS coming into the course, but I feel like this course has helped me to understand why properties and elements work the way they do. Being able to look at a page and understand the general flow and figure out how you want to tackle sections is not a skill I had before this course, so to you and everyone else at Devslopes, thank you!

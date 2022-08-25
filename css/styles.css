@@ -117,6 +117,10 @@
   justify-content: space-between;
 }
 
+.hero-left {
+  max-width: 24rem;
+}
+
 
 .hero-left h2 {
   font-size: var(--size-50);
@@ -234,7 +238,7 @@
 /* Card Grid Styling*/
 .benefits-grid-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(212px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
   gap: var(--size-14);
   margin-bottom: var(--size-150);
 }
@@ -293,11 +297,20 @@
 }
 
 .video-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  display: flex;
+  justify-content: center;
 }
 
 .video-left {
+  flex: 1;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.video-right {
+  flex: 1;
   align-self: center;
 }
 
@@ -366,7 +379,7 @@
 
 .why-line {
   flex: none;
-  width: var(--size-60);
+  width: var(--size-50);
   height: 2px;
   background-color: var(--font-color-placeholder);
   flex-grow: 1;
@@ -622,7 +635,6 @@
   color: var(--white);
   font-size: var(--size-20);
   font-weight: 400;
-  
 }
 
 .user-container {
@@ -799,6 +811,11 @@ footer {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  gap: var(--size-20);
+}
+
+.socials-wrapper {
+  display: flex;
   gap: var(--size-20);
 }
 
