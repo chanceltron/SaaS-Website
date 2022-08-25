@@ -1,29 +1,85 @@
+/* iPads and Tablets */
 @media screen and (max-width: 768px) {
+  /* Navbar Controls & Responsive Styling */
   [aria-controls="navbarDropdown"] {
     display: block;
   }
 
-  [aria-expanded="false"] ~ ul {
+  [aria-expanded="false"] ~ .nav-right {
     display: none;
   }
 
-  [aria-expanded="true"] ~ ul {
-    display: block;
+  [aria-expanded="true"] ~ .nav-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     right: 0;
-    top: 50px;
-    background-image: linear-gradient(
-      to right,
-      transparent,
-      rgba(255, 255, 255, 0.7) 100%
-    );
+    margin-top: var(--size-10);
+    padding: var(--size-60);
+    top: 3.35rem;
+    background-color: var(--white);
     width: 100%;
-    text-align: right;
-    box-shadow: 0px 0px 20px rgba(52, 49, 75, 0.1);
+    text-align: center;
+    border-top: 1px solid var(--font-color-placeholder);
   }
 
   [aria-expanded="true"] ~ ul a {
-    margin-right: 20px;
-    color: #666;
+    font-weight: 600;
   }
+
+  [aria-expanded="true"] ~ .nav-right button {
+    margin-top: var(--size-60);
+  }
+
+  /* Hero Responsive Styling */
+  .bg-hero .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20rem;
+  }
+
+  /* Icon Positioning */
+.icon-1 {
+  top: 2rem;
+  right: 14rem;
+}
+
+.icon-2 {
+  top: 3rem;
+  right: 0rem;
+}
+
+.icon-3 {
+  top: 5rem;
+  right: -17rem;
+}
+
+.icon-4 {
+  top: 9rem;
+  right: 11rem;
+}
+
+.icon-5 {
+  top: 10rem;
+  right: -8rem;
+}
+
+.icon-6 {
+  top: 16rem;
+  right: 4rem;
+}
+
+.icon-7 {
+  top: 17rem;
+  right: -14rem;
+}
+
+}
+
+/* Mobile Phone */
+@media screen and (max-width: 480px) {
+
 }

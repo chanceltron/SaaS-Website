@@ -32,20 +32,24 @@
   transition: ease-in-out 0.3s;
 }
 
+.navbar.expanded {
+  background-color: var(--white);
+  height: 100%;
+}
+
 .navbar.sticky {
   background-color: white;
   box-shadow: 0px 0px 20px rgba(48, 63, 100, 0.2);
 }
 
-.navbar.sticky .navbar-toggler span,
-.navbar.sticky .navbar-brand {
-  color: #666;
+.navbar.sticky .navbar-toggler span {
+  color: var(--font-color-dark);
 }
 
 .navbar-toggler {
   position: absolute;
-  right: 20px;
-  top: 10px;
+  right: var(--size-30);
+  top: var(--size-16);
   outline: none;
   background-color: transparent;
   border: none;
@@ -53,7 +57,7 @@
 
 .navbar-toggler span {
   background-color: transparent;
-  font-size: 20px;
+  font-size: var(--size-20);
   cursor: pointer;
   pointer-events: none;
 }
@@ -73,6 +77,12 @@
   transition: ease-in-out 0.3s;
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .navbar-nav {
   display: flex;
   align-items: center;
@@ -80,7 +90,7 @@
 
 .nav-link a {
   margin-right: var(--size-20);
-  line-height: 20px;
+  line-height: var(--size-20);
   transition: ease-in-out 0.3s;
 }
 
@@ -100,7 +110,7 @@
   background-position: center;
 }
 
-.bg-hero .container{
+.bg-hero .container {
   padding-top: var(--size-150);
   padding-bottom: var(--size-150);
   display: flex;

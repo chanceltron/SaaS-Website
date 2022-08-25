@@ -37,14 +37,16 @@
         <a class="navbar-brand" href="index.html">
           <img src="./assets/project_logo/logo.svg" alt="logo" />
         </a>
-        <ul class="navbar-nav">
-          <li class="nav-link"><a href="#">Home</a></li>
-          <li class="nav-link"><a href="#">Features</a></li>
-          <li class="nav-link"><a href="#">Learn</a></li>
-          <li class="nav-link"><a href="#">Pricing</a></li>
-          <li class="nav-link"><a href="#">Hire Us</a></li>
+        <div class="nav-right">
+          <ul class="navbar-nav">
+            <li class="nav-link"><a href="#">Home</a></li>
+            <li class="nav-link"><a href="#">Features</a></li>
+            <li class="nav-link"><a href="#">Learn</a></li>
+            <li class="nav-link"><a href="#">Pricing</a></li>
+            <li class="nav-link"><a href="#">Hire Us</a></li>
+          </ul>
           <button class="btn btn-primary">Buy Now</button>
-        </ul>
+        </div>
       </div>
     </nav>
 
@@ -583,6 +585,11 @@
         const expanded =
           target.getAttribute("aria-expanded") === "true" || false;
         navButton.setAttribute("aria-expanded", !expanded);
+        if (!expanded) {
+          nav.classList.add("expanded");
+        } else {
+          nav.classList.remove("expanded");
+        }
       }
 
       navButton.addEventListener("click", toggleNav);
